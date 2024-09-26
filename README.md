@@ -1,6 +1,5 @@
 # 📋 To-Do List
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
 **Link do projeto**: [To-Do List](https://todo-list-henna-nine-15.vercel.app/)
 
 Este é um projeto de uma **To-Do List** desenvolvido com o intuito de praticar habilidades em **HTML**, **CSS**, e **JavaScript**. O aplicativo permite que os usuários criem, editem, marquem como concluídas e removam tarefas, tudo com persistência no **Local Storage**.
