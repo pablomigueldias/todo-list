@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #1d1825;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(../img/vincent-guth-62V7ntlKgL8-unsplash.jpg);
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25rem;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 4rem;
+  margin-right: 35rem;
+  margin-bottom: 1rem;
+}
+.container-todo {
+  margin-top: 18rem;
+}
+
+.adicionarTarefa {
+  display: flex;
+}
+.adicionarTarefa input {
+  width: 40rem;
+  padding: 30px;
+  margin-right: 10px;
+  font-size: 1.4rem;
+  outline: none;
+}
+.adicionarTarefa input:focus {
+  border: 3px solid #9e78cf;
+}
+header button {
+  background-color: #9e78cf;
+  width: 10%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header button:hover {
+  opacity: 0.9;
+}
+
+.size-6 {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  transition: 0.3s;
+  padding: 22px;
+}
+.size-7 {
+  width: 30px;
+  height: 30px;
+  color: #9e78cf;
+  transition: 0.3s;
+}
+.size-6:hover {
+  color: #0d0714;
+}
+.size-7:hover {
+  color: #fff;
+}
+.barraDeTarefas {
+  margin-top: 80px;
+  min-width: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.barraDeTarefas input {
+  height: 3rem;
+  width: 20rem;
+  font-size: 1rem;
+  background-color: #1d1825;
+  border: none;
+  border-bottom: 1px solid #9e78cf;
+  outline: none;
+  color: #fff;
+}
+.barraDeTarefas input::placeholder {
+  color: #9e78cf;
+}
+.barraDeTarefas input:focus {
+  border-top: 1px solid #9e78cf;
+}
+.barraDeTarefas button {
+  border: none;
+  background-color: #1d1825;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.procurar {
+  display: flex;
+}
+.filtros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filtros select {
+  height: 3rem;
+  width: 9rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #9e78cf;
+  background-color: #1d1825;
+  border: none;
+  transition: 0.3s;
+}
+.filtros select:hover {
+  color: #fff;
+}
+main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #15101c;
+  min-width: 750px;
+  padding: 30px 0;
+  color: #9e78cf;
+}
+.todo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #1d1825;
+  width: 660px;
+  justify-content: space-between;
+}
+.todo p {
+  font-size: 1.3rem;
+}
+.todo button {
+  background-color: #1d1825;
+  margin: 0.2rem;
+  padding: 0.1rem;
+  border: none;
+  cursor: pointer;
+}
+.edit-todo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 650px;
+  padding-left: 20px;
+}
+.edit-todo p {
+  font-size: 1.3rem;
+}
+.form-edit {
+  display: flex;
+  margin-top: 40px;
+}
+.edit-todo form {
+  display: flex;
+  align-items: center;
+}
+.edit-todo input {
+  height: 3rem;
+  width: 25rem;
+  font-size: 1rem;
+  background-color: #1d1825;
+  border: none;
+  border-bottom: 1px solid #9e78cf;
+  outline: none;
+  color: #fff;
+}
+.botao-form {
+  background-color: #1d1825;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 0.1rem;
+  border: none;
+  cursor: pointer;
+}
+.infoEdit-todo {
+  background-color: #1d1825;
+  padding: 30px 5px;
+}
+.infoEdit-todo p {
+  font-size: 25px;
+}
+.botao-voltar button {
+  background-color: #9e78cf;
+  width: 110px;
+  height: 60px;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.botao-voltar {
+  margin-left: 50px;
+}
+.botao-voltar button:hover {
+  color: #0d0714;
+  opacity: 0.9;
+}
+.done {
+  background-color: #9e78cf;
+}
+.done p {
+  color: #0d0714;
+  text-decoration: line-through;
+  font-style: italic;
+}
+.done button {
+  background-color: #9e78cf;
+}
+.done svg {
+  color: #0d0714;
+}
+.hiden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  main {
+    overflow: hidden;
+  }
+  header h1 {
+    margin-left: 220px;
+  }
+
+  .container-todo {
+    margin-top: 18rem;
+  }
+
+  .adicionarTarefa {
+    display: flex;
+    justify-content: center;
+  }
+  .adicionarTarefa input {
+    width: 400px;
+    font-size: 1.4rem;
+    outline: none;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    min-width: 700px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .barraDeTarefas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    overflow: hidden;
+  }
+  main {
+    margin-left: 150px;
+  }
+  .todo {
+    width: 600px;
+    margin-left: 90px;
+  }
+}
